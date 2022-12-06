@@ -748,7 +748,11 @@ main {
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-
+@media (min-width: 200px){
+  .avatar-box img{
+    border-radius: 20px;
+  }
+}
 /**
  * responsive larger than 450px screen
  */
