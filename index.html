@@ -174,7 +174,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about  active">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -209,7 +209,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
+                <img src="./assets/images/design.svg
                 " alt="design icon" width="40">
               </div>
 
@@ -226,7 +226,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/dev.svg" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -242,7 +242,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/mobile.svg" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -258,7 +258,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/photo.svg" alt="camera icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -344,7 +344,7 @@
           <h3 class="h3 portfolio-title" style="margin-block: 25px 20px;">Portfolio</h3>
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -362,7 +362,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -380,7 +380,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -398,7 +398,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -416,7 +416,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -434,7 +434,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -452,7 +452,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -470,7 +470,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -488,7 +488,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active">
               <a href="#">
 
                 <figure class="project-img">
@@ -515,10 +515,23 @@
   </main>
 
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+  <script>
+    // element toggle function
+    const elementToggleFunc = function (elem) {
+      elem.classList.toggle("active");
+    }
+
+
+
+    // sidebar variables
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+    // sidebar toggle functionality for mobile
+    sidebarBtn.addEventListener("click", function () {
+      elementToggleFunc(sidebar);
+    });
+  </script>
 
   <!--
     - ionicon link
