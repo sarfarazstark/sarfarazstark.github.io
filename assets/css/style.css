@@ -26,12 +26,12 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(117, 100%, 71%) 0%, 
+    hsl(205, 100%, 71%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(205, 100%, 71%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
@@ -41,8 +41,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsla(118, 96%, 56%, 0.729), 
-    hsl(127, 99%, 68%)
+    hsla(216, 96%, 56%, 0.729), 
+    hsl(201, 99%, 68%)
   );
 
   /* solid */
@@ -54,8 +54,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(120, 100%, 72%);
-  --vegas-gold: hsl(115, 53%, 56%);
+  --orange-yellow-crayola: hsl(219, 96%, 68%);
+  --vegas-gold: hsl(216, 53%, 56%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -745,9 +745,6 @@ main {
 
 
 
-
-
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -862,7 +859,7 @@ main {
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 120px; border-radius: 30px;}
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1024,45 +1021,6 @@ main {
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
 
-
-  /**
-   * #PORTFOLIO, BLOG
-   */
-
-  .project-img, .blog-banner-box { border-radius: 16px; }
-
-  .blog-posts-list { gap: 30px; }
-
-  .blog-content { padding: 25px; }
-
-
-
-  /**
-   * #CONTACT
-   */
-
-  .mapbox {
-    height: 380px;
-    border-radius: 18px;
-  }
-
-  .input-wrapper {
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-
-  .form-input { padding: 15px 20px; }
-
-  textarea.form-input { margin-bottom: 30px; }
-
-  .form-btn {
-    --fs-6: 16px;
-    padding: 16px 20px;
-  }
-
-  .form-btn ion-icon { font-size: 18px; }
-
-}
 
 
 
@@ -1402,4 +1360,5 @@ main {
 
   .timeline-text { max-width: 700px; }
 
+}
 }
