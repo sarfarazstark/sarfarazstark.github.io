@@ -19,10 +19,9 @@
 </head>
 
 <body class="bg-gray-800 text-white h-full relative flex justify-center">
+  <div class="absolute top-0 left-0 w-full h-full max-w-7xl" id="particles-js"></div> <!-- particles-js -->
 
-  <div class="absolute top-0 left-0 w-full h-full max-w-7xl" id="particles-js"></div>
-
-  <main class="relative w-full xl:w-4/5 h-full p-6 bg-opacity-30 backdrop-blur-xl flex flex-col gap-10">
+  <main class="relative w-full xl:w-4/5 h-full p-6 bg-opacity-10 backdrop-blur-xl flex flex-col gap-10">
     <header class="flex flex-col lg:grid lg:grid-cols-[3fr_4fr_3fr] gap-5 justify-between w-full ">
       <figure
         class="flex-1 p-[2px] bg-gradient-to-bl from-border-from to-border-to rounded-xl font-title uppercase tracking-widest font-semibold bg-opacity-10 backdrop-blur-lg">
@@ -114,7 +113,7 @@
           </li>
 
           <li class="p-3 pt-10 flex justify-end items-end text-red-600 bg-white rounded-2xl" title="vitejs">
-            <img src="./assets/images/vitejs.svg" alt="vite js" class="w-12">
+            <img src="./assets/images/vitejs.svg" alt="vite js" class="w-12">`
           </li>
         </ul>
       </div>
@@ -122,6 +121,9 @@
 
   </main>
   <script src="particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'assets/particles.json');
+  </script>
   <script type="module" src="/main.js"></script>
 </body>
 
