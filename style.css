@@ -8,27 +8,3 @@
   height: 100vh;
   overflow: hidden;
 }
-
-.shape {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: #FF6347;
-  border-radius: 50%;
-  opacity: 0.8;
-  animation: float 10s infinite ease-in-out;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-
-  50% {
-    transform: translateY(-200px) translateX(200px);
-  }
-
-  100% {
-    transform: translateY(0) translateX(0);
-  }
-}

@@ -7,18 +7,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="tailwind.css">
   <title>Vite App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-gray-800">
-  <div class="shape-container">
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
+<body class="bg-gray-800 text-white h-full relative flex justify-center">
 
-  </div>
+  <!-- <div class="absolute top-0 left-0 w-full h-full max-w-7xl" id="particles-js"></div> -->
 
+  <main class="relative w-4/5 h-full bg-gray-700 p-6 bg-opacity-30 backdrop-blur-sm">
+    <header class="grid grid-cols-[3fr_4fr_3fr] gap-5 justify-between w-full">
+      <figure class="flex-1 p-[2px] bg-gradient-to-bl from-border-from to-border-to rounded-xl">
+        <div class="flex flex-col items-center bg-gray-900 py-5 px-3 rounded-xl w-full gap-5">
+          <img src="./assets/images/sarfaraz.jpg" class="w-1/2 rounded-full h-auto" alt="Image of Sarfaraz">
+          <figcaption>
+            <h1 class="font-title text-2xl uppercase font-semibold">Md Sarfaraz Alam</h1>
+            <p class="text-center text-xl">Web Developer</p>
+          </figcaption>
+        </div>
+      </figure>
+      <article class="bg-white text-gray-800 p-5 flex flex-col justify-between rounded-xl">
+        <h2 class="uppercase text-2xl font-semibold">about me</h2>
+        <p class="text-lg">I'm an engineering student with a passion for technology and investing. I love working on
+          dynamic web projects using modern JavaScript and tools like Parcel. My interests include exploring new tech
+          innovations and
+          creating interactive and impactful applications.</p>
+      </article>
+      <nav class="h-full w-full">
+        <ul class="h-full w-full grid grid-cols-2 grid-rows-2 gap-5">
+          <li class="flex justify-between p-4 rounded-md bg-black">
+            <i class="fa-brands fa-x-twitter mt-auto text-xl"></i>
+            <a href="#" class="h-full"><i class="fa-solid fa-arrow-right -rotate-45"></i></a>
+          </li>
+          <li class="flex justify-between p-4 rounded-md bg-gradient-to-br from-yellow via-border-to to-border-from">
+            <i class="fa-brands fa-instagram mt-auto text-xl"></i>
+            <a href="#" class="h-full"><i class="fa-solid fa-arrow-right -rotate-45"></i></a>
+          </li>
+          <li class="flex justify-between p-4 rounded-md bg-gray-600">
+            <i class="fa-brands fa-github mt-auto text-xl"></i>
+            <a href="#" class="h-full"><i class="fa-solid fa-arrow-right -rotate-45"></i></a>
+          </li>
+          <li class="flex justify-between p-4 rounded-md bg-white text-gray-900">
+            <p class="mt-auto text-xl font-semibold">Read.cv</p>
+            <a href="#" class="h-full"><i class="fa-solid fa-arrow-right -rotate-45"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </main>
+
+
+  <script src="particles.js"></script>
   <script type="module" src="/main.js"></script>
 </body>
 
