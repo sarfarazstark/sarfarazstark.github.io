@@ -18,12 +18,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-gray-800 text-white h-full relative 2xl:h-full flex justify-center transition-all duration-1000">
-  <div class="absolute top-0 left-0 w-full h-full max-w-[1440px]" id="particles-js"></div> <!-- particles-js -->
+<body
+  class="bg-gray-800 text-white h-full 2xl:h-screen relative flex 2xl:items-center justify-center transition-all duration-1000">
+  <div class="absolute top-0 left-0 w-full h-full" id="particles-js"></div> <!-- particles-js -->
 
   <main
-    class="relative w-full xl:w-4/5 max-w-[1440px] h-full p-6 bg-opacity-10 backdrop-blur-2xl flex flex-col gap-10 shadow-lg">
+    class="relative w-full xl:w-4/5 max-w-[1440px] h-auto p-6 bg-opacity-10 backdrop-blur-2xl flex flex-col gap-10 shadow-lg xl:mt-10 rounded-xl">
+
     <header class="flex flex-col md:grid lg:grid-cols-[3fr_4fr_3fr] md:grid-cols-2 gap-5 justify-between w-full ">
+      <!-- Profile card -->
       <figure
         class="flex-1 p-[2px] bg-gradient-to-bl from-border-from to-border-to rounded-xl font-title uppercase tracking-widest font-semibold">
         <div class="flex flex-col items-center bg-gray-900 py-8 px-3 rounded-xl justify-between w-full gap-5 h-full">
@@ -34,9 +37,10 @@
           </figcaption>
         </div>
       </figure>
+      <!-- About me card -->
       <article class="bg-white text-gray-800 p-5 flex flex-col justify-between gap-5 rounded-xl">
         <h2 class="uppercase text-3xl font-title font-semibold">about me</h2>
-        <p class="text-lg font-paragraph">I'm an engineering student with a passion for technology and
+        <p class="text-lg font-paragraph 2xl:text-2xl">I'm an engineering student with a passion for technology and
           investing. I love
           working on
           dynamic web projects using modern JavaScript and tools like Parcel. My interests include exploring new tech
@@ -44,6 +48,7 @@
           creating interactive and impactful applications.</p>
       </article>
 
+      <!-- Social links -->
       <nav class="h-full w-full lg:col-span-1 md:col-span-2">
         <ul
           class="h-full w-full grid grid-cols-2 grid-rows-2 md:grid-cols-4 lg:grid-cols-2 lg:grid-rows-2 md:grid-rows-1 gap-5 md:h-32 lg:h-full">
@@ -70,90 +75,107 @@
         </ul>
       </nav>
     </header>
-
+    <!-- Statistics and skills -->
     <section class="flex flex-col-reverse lg:grid lg:grid-cols-2 justify-between gap-10">
       <div class="flex flex-col justify-start items-start">
         <h2 class="uppercase font-title text-3xl mb-5">statistics</h2>
         <img
           src="https://raw.githubusercontent.com/sarfarazstark/github-stats/master/generated/overview.svg#gh-dark-mode-only"
-          alt="github statistics" class="w-full h-auto bg-gradient-to-b from-border-from to-border-to rounded-2xl">
+          alt="github statistics"
+          class="w-full h-auto bg-gradient-to-b from-border-from to-border-to rounded-lg md:rounded-2xl">
       </div>
       <div class="skills-container">
         <h2 class="uppercase font-title text-3xl mb-5">skills</h2>
-        <ul class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-4 gap-5 justify-between ">
-
-          <li class="text-5xl p-3 pt-10 flex justify-end items-end text-white bg-orange-500 rounded-2xl" title="HTML5">
-            <i class="fab fa-html5"></i>
-          </li>
-
-          <li class="text-5xl p-3 pt-10 flex justify-end items-end text-white bg-sky-400 rounded-2xl" title="CSS3">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-
-          <li class="text-5xl p-3 pt-10 flex justify-end items-end text-white bg-amber-400 rounded-2xl"
-            title="JavaScript">
-            <i class="fab fa-js"></i>
-          </li>
-
-          <li class="text-5xl p-3 pt-10 flex justify-end items-end text-white bg-neutral-700 rounded-2xl"
-            title="Github">
-            <i class="fab fa-github"></i>
-          </li>
-
-          <li class="text-5xl p-3 pt-10 flex justify-end items-end text-red-600 bg-white rounded-2xl" title="GIT">
-            <i class="fab fa-git-alt"></i>
-          </li>
-
-          <li class="p-3 pt-10 flex justify-end items-end text-red-600 bg-white rounded-2xl" title="figma">
-            <img src="./assets/images/figma.svg" alt="figma" class="w-12">
-          </li>
-
-          <li class="p-3 pt-10 flex justify-end items-end text-red-600 bg-white rounded-2xl" title="vscode">
-            <img src="./assets/images/visual-studio-code.svg" alt="vscode" class="w-12">
-          </li>
-
-          <li class="p-3 pt-10 flex justify-end items-end text-red-600 bg-white rounded-2xl" title="tailwind-css">
-            <img src="./assets/images/tailwind-css.svg" alt="tailwind css" class="w-12">
-          </li>
-
-          <li class="p-3 pt-10 flex justify-end items-end text-red-600 bg-white rounded-2xl" title="vitejs">
-            <img src="./assets/images/vitejs.svg" alt="vite js" class="w-12">`
-          </li>
-        </ul>
+        <div class="flex flex-wrap gap-5">
+          <img
+            src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&amp;logo=vite&amp;logoColor=white"
+            alt="Vite" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
+            alt="CSS3" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&amp;logo=c%2B%2B&amp;logoColor=white"
+            alt="C++" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
+            alt="JavaScript" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+            alt="HTML5" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+            alt="GithubPages" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&amp;logo=netlify&amp;logoColor=#00C7B7"
+            alt="Netlify" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&amp;logo=tailwind-css&amp;logoColor=white"
+            alt="TailwindCSS" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
+            alt="Figma" class="w-auto h-10 2xl:h-12">
+          <img
+            src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&amp;logo=Canva&amp;logoColor=white"
+            alt="Canva" class="w-auto h-10 2xl:h-12">
+          <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
+            alt="Git" class="w-auto h-10">
+          <img
+            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+            alt="GitHub" class="w-auto h-10 2xl:h-12">
+        </div>
       </div>
     </section>
-    <section class="projects grid grid-cols-1 md:flex md:flex-col xl:grid-cols-3 gap-5 items-start">
 
-      <h2 class="uppercase font-title text-3xl mb-5 col-span-2">Projects</h2>
+    <!-- Projects -->
+    <section class="projects flex flex-col lg:grid lg:grid-cols-6 2xl:grid-cols-2 gap-5 items-start">
 
-      <article class="bg-gray-900 p-5 rounded-xl md:flex transition duration-1000 text-center ">
-        <img src="assets/images/frontendmentor.png" alt="FrontendMentor" class="rounded-lg mb-5">
-        <section class="flex flex-col justify-between text-3xl">
-          <h2 class="font-title">Frontend Mentor</h2>
-          <p class="col-span-2 mt-5 text-lg text-gray-200 font-paragraph">This page showcases my Frontend Mentor
+      <h2 class="uppercase font-title text-3xl mb-5 col-span-2 lg:col-span-6 2xl:col-span-2">Projects</h2>
+
+      <article
+        class="bg-gray-900 p-5 rounded-2xl md:grid md:grid-cols-2 md:gap-5 transition duration-1000 text-left  lg:col-span-4 2xl:col-span-1">
+        <img src="assets/images/frontendmentor.png" alt="Frontend Mentor" class="rounded-lg mb-5 md:mb-0">
+        <section class="flex flex-col justify-start gap-5 text-3xl">
+          <div class="grid grid-cols-[2fr_1fr]">
+            <h2 class="font-title">Frontend Mentor</h2>
+            <div class="flex gap-5 items-center text-xl">
+              <a href="https://sarfarazstark.github.io/nuskha/"
+                class="text-lg text-gray-200 font-paragraph hover:text-stone-600 hover:transition-colors hover:duration-500">
+                <i class="fab fa-github"></i></a>
+              <a href=""
+                class="text-lg text-gray-200 font-paragraph uppercase hover:text-stone-600 hover:transition-colors hover:duration-500"
+                target="_blank">
+                live
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <p class="col-span-2 text-lg text-gray-200 font-paragraph">This page showcases my Frontend Mentor
             projects, where I
             translated design challenges into responsive and accessible web solutions.</p>
-          <div class="uppercase text-lg font-semibold flex justify-between text-figma-2 mt-5">
-            <a href="" class="border border-figma-2 p-2 px-4 rounded-lg">code <i class="fab fa-github"></i></a>
-            <a href="https://nuskha.netlify.app" class="border p-2 px-4 border-figma-2 rounded-lg">View Project <i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </section>
       </article>
 
-      <article class="bg-gray-900 p-5 rounded-xl transition duration-1000 text-center ">
-        <img src="assets/images/nuskha.jpg" alt="Nuskha" class="rounded-lg mb-5">
-        <section class="flex flex-col justify-between text-3xl">
-          <h2 class="font-title">Nuskha</h2>
-          <p class="col-span-2 mt-5 text-lg text-gray-200 font-paragraph">Developed Nuskha, a recipe website that allows
+      <article
+        class="bg-gray-900 p-5  rounded-2xl md:grid md:grid-cols-2 md:gap-5 transition duration-1000 text-left  lg:col-span-4 2xl:col-span-1">
+        <img src=" assets/images/nuskha.jpg" alt="Nuskha" class="rounded-lg mb-5 md:mb-0">
+        <section class="flex flex-col justify-start gap-5 ">
+          <div class="grid grid-cols-[2fr_1fr]">
+            <h2 class="font-title text-3xl">Nuskha</h2>
+            <div class="flex gap-5 items-center text-xl">
+              <a href="https://sarfarazstark.github.io/nuskha/"
+                class="text-lg text-gray-200 font-paragraph hover:text-stone-600 hover:transition-colors hover:duration-500">
+                <i class="fab fa-github"></i></a>
+              <a href=""
+                class="text-lg text-gray-200 font-paragraph uppercase hover:text-stone-600 hover:transition-colors hover:duration-500"
+                target="_blank">
+                live
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <p class="col-span-2 text-lg text-gray-200 font-paragraph">Developed Nuskha, a recipe website
+            that allows
             users to find,
             bookmark, and add their own recipes using JavaScript, HTML, CSS, and an API for data storage.</p>
-          <div class="uppercase text-lg font-semibold flex justify-between text-figma-2 mt-5">
-            <!-- code -->
-            <a href="" class="border border-figma-2 p-2 px-4 rounded-lg">code <i class="fab fa-github"></i></a>
-            <a href="https://nuskha.netlify.app" class="border p-2 px-4 border-figma-2 rounded-lg">View Project <i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
         </section>
       </article>
     </section>
