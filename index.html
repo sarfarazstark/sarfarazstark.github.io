@@ -122,48 +122,39 @@
         </ul>
       </div>
     </section>
-    <section class="projects grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-start">
+    <section class="projects grid grid-cols-1 md:flex md:flex-col xl:grid-cols-3 gap-5 items-start">
 
-      <article class="bg-gray-900 p-5 rounded-xl transition duration-1000">
+      <h2 class="uppercase font-title text-3xl mb-5 col-span-2">Projects</h2>
+
+      <article class="bg-gray-900 p-5 rounded-xl md:flex transition duration-1000 text-center ">
         <img src="assets/images/frontendmentor.png" alt="FrontendMentor" class="rounded-lg mb-5">
-        <section class="flex justify-between text-3xl">
-          <h2 class="">Frontend Mentor</h2>
-          <button id="view" class="flex items-end cursor-pointer">
-            <i class="view-icon fa-solid fa-angle-down ml-auto"></i>
-          </button>
+        <section class="flex flex-col justify-between text-3xl">
+          <h2 class="font-title">Frontend Mentor</h2>
+          <p class="col-span-2 mt-5 text-lg text-gray-200 font-paragraph">This page showcases my Frontend Mentor
+            projects, where I
+            translated design challenges into responsive and accessible web solutions.</p>
+          <div class="uppercase text-lg font-semibold flex justify-between text-figma-2 mt-5">
+            <a href="" class="border border-figma-2 p-2 px-4 rounded-lg">code <i class="fab fa-github"></i></a>
+            <a href="https://nuskha.netlify.app" class="border p-2 px-4 border-figma-2 rounded-lg">View Project <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </section>
-        <p class="col-span-2 mt-5 text-xl text-gray-200 hidden">I've
-          compiled my
-          Frontend Mentor projects into a
-          single
-          showcase,
-          demonstrating my skills
-          in
-          web
-          development
-          through real-world design challenges. Each project highlights my ability to turn design specifications into
-          responsive, accessible, and visually appealing web pages.</p>
       </article>
 
-      <article class="bg-gray-900 p-5 rounded-xl transition duration-1000">
-        <img src="assets/images/frontendmentor.png" alt="FrontendMentor" class="rounded-lg mb-5">
-        <section class="flex justify-between text-3xl">
-          <h2 class="">Frontend Mentor</h2>
-          <button id="view" class="flex items-end cursor-pointer">
-            <i class="view-icon fa-solid fa-angle-down ml-auto"></i>
-          </button>
+      <article class="bg-gray-900 p-5 rounded-xl transition duration-1000 text-center ">
+        <img src="assets/images/nuskha.jpg" alt="Nuskha" class="rounded-lg mb-5">
+        <section class="flex flex-col justify-between text-3xl">
+          <h2 class="font-title">Nuskha</h2>
+          <p class="col-span-2 mt-5 text-lg text-gray-200 font-paragraph">Developed Nuskha, a recipe website that allows
+            users to find,
+            bookmark, and add their own recipes using JavaScript, HTML, CSS, and an API for data storage.</p>
+          <div class="uppercase text-lg font-semibold flex justify-between text-figma-2 mt-5">
+            <!-- code -->
+            <a href="" class="border border-figma-2 p-2 px-4 rounded-lg">code <i class="fab fa-github"></i></a>
+            <a href="https://nuskha.netlify.app" class="border p-2 px-4 border-figma-2 rounded-lg">View Project <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </section>
-        <p class="col-span-2 mt-5 text-xl text-gray-200 hidden">I've
-          compiled my
-          Frontend Mentor projects into a
-          single
-          showcase,
-          demonstrating my skills
-          in
-          web
-          development
-          through real-world design challenges. Each project highlights my ability to turn design specifications into
-          responsive, accessible, and visually appealing web pages.</p>
       </article>
     </section>
   </main>
